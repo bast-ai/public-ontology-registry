@@ -39,5 +39,5 @@ RUN echo "done 0" \
     && echo "done 2" \
     && pyenv global ${PYTHON_VERSION} \
     && echo "done 3" \
-    && curl -sSL https://install.python-poetry.org | python3 - \
+    && curl -sSL https://install.python-poetry.org | python3 - --version 2.0.1 \
     && poetry config virtualenvs.in-project true

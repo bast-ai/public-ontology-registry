@@ -18,8 +18,8 @@ models:
 install:
 	@echo Installing
 	make models
-	poetry lock --no-update
-	poetry check
+	poetry lock
+	# poetry check
 	poetry update
 	poetry install --no-cache 
 	
